@@ -1,7 +1,7 @@
 // Code goes here
 
- angular.module('myApp', [])
- .controller('MyController', function($scope, $timeout, $interpolate){
+ app = angular.module('myApp', []);
+ app.controller('MyController', function($scope, $timeout, $interpolate){
    $scope.clock = {};
    $scope.$watch('emailBody', function(body){
      if (body){
@@ -17,4 +17,11 @@
    };
    updateClock();
  });
+
+ app.controller('calcController', function($scope){
+    $scope.counter = 0;
+    $scope.add = function(amount) { $scope.counter += amount; };
+    $scope.subtract = function (amount){ $scope.counter -= amount;};
+ });
+
   
