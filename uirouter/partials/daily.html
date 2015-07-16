@@ -1,0 +1,13 @@
+<h3>5-Day forecast</h3>
+
+<table>
+    <tr>
+        <th>Day</th>
+        <th>High</th>
+        <th>Low</th>
+    </tr>
+    <tr ng-repeat="dayForecast in dayForecasts">
+        <td class="number"> {{ dayForecast.high }}</td>
+        <td class="number">{{ dayForecast.low }}</td>
+    </tr>
+</table>

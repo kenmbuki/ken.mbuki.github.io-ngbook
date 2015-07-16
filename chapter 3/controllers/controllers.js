@@ -15,4 +15,14 @@ angular.module('myApp', [])
     gusername:'Ken Mbuki'
   }
 });
+.controller('FormController', function($scope) {
+  $scope.fields = [
+    {placeholder: 'Username'5, isRequired: true},
+    {placeholder: 'Password', isRequired: true},
+    {placeholder: 'Email (optional)', isRequired: false}
+  ];
 
+  $scope.submitForm = function() {
+    alert("it works!");
+  };
+});

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weather">
+<head>
+    <meta charset="UTF-8">
+    <title>Today's weather</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
+    <script src="controller.js"></script>
+    <script src="states.js"></script>
+    <script src="services.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-ui-router/api/angular-ui-router.d.ts"></script>
+</head>
+<body>
+<h1> Weather</h1>
+<div id="links">
+    <a ui-sref="hourly">Hourly Forecasts</a>
+    <a ui-sref="daily"> 5-Day Forecast</a>
+</div>
+<div ui-view></div>
+
+
+</body>
+</html>
